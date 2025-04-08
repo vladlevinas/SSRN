@@ -8,7 +8,7 @@ import streamlit as st
 df = pd.read_csv("abstracts_for_search.csv")
 
 # Загрузка модели
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 # Кэшируем эмбеддинги
 @st.cache_data(show_spinner=False)
